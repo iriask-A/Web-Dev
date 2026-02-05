@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: white;
+    }
+    .main_wrap {
+      display: flex;
+      height: 90vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .left_side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 40px;
+      text-align: center;
+      border-right: 1px solid rgb(223, 223, 223);
+      height: 100%;
+    }
+    .right_side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .form_container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .gradin {
+      background: radial-gradient(circle at 30% 107%, rgb(253, 115, 39) 0%, rgb(253, 39, 135) 50%, rgb(184, 60, 184) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .textboxes {
+      font-size: 14px;
+      width: 100%;
+      height: 44px;
+      border-radius: 12px;
+      border: 1px solid rgb(223, 223, 223);
+      padding: 0 12px;
+      box-sizing: border-box;
+      background: #fafafa;
+    }
+    .buttons {
+      font-size: 16px;
+      width: 100%;
+      height: 44px;
+      border-radius: 22px;
+      border: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: bold;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+    }
+    .footer_side {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      font-size: 12px;
+      color: grey;
+      border-top: 1px solid rgb(223, 223, 223);
+      padding-top: 20px;
+    }
+    .footer_bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      font-size: 12px;
+      color: grey;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="main_wrap">
+  <div class="left_side">
+    <p style="font-size: 48px; line-height: 1.2; font-weight: bold; max-width: 500px;">
+      Посмотрите, какими моментами из жизни поделились ваши <span class="gradin">близкие друзья</span>.
+    </p>
+    <img src="img_1.png" alt="instagram image" style="width: 80%; max-width: 500px; height: auto;">
+  </div>
+
+  <div class="right_side">
+    <div class="form_container">
+      <p style="font-size: 24px; margin-bottom: 24px;">Войти в Instagram</p>
+      <form>
+        <input class="textboxes" type="email" placeholder="Имя пользователя, номер или почта"><br><br>
+        <input class="textboxes" type="password" placeholder="Пароль"><br><br>
+        <input class="buttons" type="button" value="Войти" style="color: white; background: #95acf1;"><br><br>
+        <input class="buttons" type="button" value="Забыли пароль?" style="background: transparent; color: #00376b; font-size: 12px;"><br><br>
+        <button class="buttons" style="background: transparent; color: #385185;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="FB" style="width: 20px;">
+          Войти через Facebook
+        </button><br><br>
+        <input class="buttons" type="button" value="Создать новый аккаунт" style="border: 1px solid #0095f6; color: #0095f6; background: transparent;"><br><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" style="width: 80px; display: block; margin: 0 auto;">
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer_side">
+    <a>Meta</a><a>Информация</a><a>Блог</a><a>Вакансии</a><a>Помощь</a><a>API</a><a>Конфиденциальность</a><a>Условия</a><a>Места</a><a>Instagram Lite</a><a>Threads</a><a>Meta Verified</a>
+  </div>
+  <div class="footer_bottom">
+    <select style="border: 0; background: transparent; color: grey;">
+      <option>Русский</option>
+      <option>English</option>
+    </select>
+    <span>© 2026 Instagram from Meta</span>
+  </div>
+</footer>
+</body>
+</html>
