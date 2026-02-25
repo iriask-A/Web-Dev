@@ -1,0 +1,21 @@
+<div class="product-card">
+  <div class="image-box">
+    <img [src]="product.image" 
+         [alt]="product.name" 
+         referrerpolicy="no-referrer">
+  </div>
+
+  <div class="product-info">
+    <h3>{{ product.name }}</h3>
+    <p class="price">{{ product.price | number }} ₸</p>
+    <div class="rating">⭐ {{ product.rating }}</div>
+    
+    <div class="actions">
+      <a [href]="product.link" target="_blank" class="kaspi-btn">Купить на Kaspi</a>
+      <div class="share-btns">
+        <button class="wa" (click)="shareWhatsApp()">WA</button>
+        <button class="tg" (click)="shareTelegram()">TG</button>
+      </div>
+    </div>
+  </div>
+</div>
