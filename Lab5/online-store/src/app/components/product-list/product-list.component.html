@@ -1,0 +1,9 @@
+<div class="shop-container">
+  <h1>Магазин на Kaspi</h1>
+  <div class="products-grid">
+    <app-product-card 
+      *ngFor="let item of products" 
+      [product]="item">
+    </app-product-card>
+  </div>
+</div>
